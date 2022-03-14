@@ -1,0 +1,71 @@
+//HEROKU
+    instalar cli
+    heroku -v
+    heroku login  //una sola vez por maquina
+    heroku git:remote -a repo-heroku
+    git push heroku master  //actualiza cada vez que tenemos un cambio
+    heroku open
+    //OCULTAR CLAVES
+        heroku config
+        heroku config:set nombre="miguel"   ///crea una variable de entorno
+        heroku config:get nombre              //obtiene el valor
+        heroku config:unset nombre          //borrar variable
+
+        heroku config:set MONGODB_CNN="mongodb+srv://AdsiClases:aNz2J1yc0AFDYIWF@cluster0.zxyca.mongodb.net/sistemaDB"
+
+    //MYSQL
+        heroku addons:create cleardb:ignite
+
+//GIT
+POR SI HAY ERRORYES PROXY SENA.
+git config --global http.sslBackend "openssl"
+git config --global http.sslCAInfo "C:\Program Files\Git\mingw64\ssl\cert.pem"
+
+
+    git config --global user.name "Miguel Angel"
+    git config --global user.email mpgigat@gmail.com
+    git remote add origin https://github.com/mpgigat/fh-sockets.git
+
+    git remote -v    //saber repo
+    git init
+    git add .
+    git commit -m "Primer Commit"     //fotografia
+    lineaaaaaaaaaade git
+    git push -u origin master    //-u la url como opt por defecto  
+                               //si es la primera vez pide user y pass
+
+    //AGREGAR ALGO DESPUES
+    git add .
+    git commit -m "agregamos readem"
+    git push
+
+    //AGREGAR TAGS
+    git tag -a v1.0.0 -m "Primera Versión"
+    git tag                             //confirma si esta lista
+    git push --tags
+
+    //VARIOS
+        git reset   // DESCHACER CAMBIOS     
+        git status //ESTATUS DE LO QUE SE VA A SUBIR
+        git branch // SI SE USA SOLO, ME INDICA EN QUE RAMA ESTOY, CON UN PARAMETRO CREA UNA NUEVA RAMA
+        git rm loquequieroeliminar --cached
+        git checkout -- .//ddevuelve el ultimo commit
+        git config --get remote.origin.url    
+        git reset HEAD nombre_de_archivo // eliminar seguimiento 
+        git rm --cached nombre_archivo    //eliminar del repositorio
+    
+    //GIT IGNORE
+        node_modules/
+        .env
+
+configurar start en packaje.json
+
+//ECMASCRIPT 6  REQUIRE VS IMPORT
+    require('dotenv').config();
+        import {} from 'dotenv/config'
+        ó
+        importa  dotenv  from  'dotenv' 
+        dotenv.config();
+
+    export {xx}
+       
